@@ -1,0 +1,44 @@
+---
+import { Icon } from 'astro-icon/components';
+const { 
+  link, 
+  name="Github", 
+  btnClasses='btn-primary btn-soft',
+  tooltip='',
+  iconSize=6
+} = Astro.props;
+---
+
+<button onclick='modalLeaving.showModal()' class={`btn ${btnClasses}`} data-tip={tooltip}>
+  <Icon name="simple-icons:github" class={`size-${iconSize}`} />
+  {name!="" && <>
+    {name}
+    <Icon name='material-symbols:open-in-new' />
+  </>}
+</button>
+
+<dialog id="modalLeaving" class='modal'>
+  <div class='modal-box'>
+    <form method='dialog'>
+      <button class='btn btn-sm btn-circle btn-ghost absolute right-2 top-2'>x</button>
+    </form>
+    <h3 class='text-lg font-bold'>Warning - you are leaving the site</h3>
+    <p class='pt-4'>You are being redirected to:</p>
+    <div class='w-full mt-2 bg-base-200 rounded-box'>
+      <!-- <Icon name='material-symbols:globe' class='join-item size-6' /> -->
+      <span class='font-mono p-2 text-lg'>{link}</span>
+    </div>
+    <div class='modal-action'>
+      <form method='dialog'>
+        <button class='btn btn-primary'>Go back</button>
+      </form>
+      <a href={link} class='btn btn-error'>
+        Continue
+        <Icon name='material-symbols:open-in-new' />
+      </a>
+    </div>
+  </div>
+  <form method='dialog' class='modal-backdrop'>
+    <button>close</button>
+  </form>
+</dialog>

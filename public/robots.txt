@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /
+
+Sitemap: https://byrix.github.io/webapps/sitemap-index.xml

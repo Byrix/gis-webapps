@@ -1,0 +1,33 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/MainLayout.astro';
+import NavCard from '../components/NavCard.astro';
+import GithubLink from '../components/GithubLink.astro';
+---
+
+<BaseLayout title='Home' classList="flex justify-center items-center">
+  <div class="h-2/5 flex flex-col lg:flex-row">
+    <NavCard img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" imgAlt="Shoes">
+      <h2 class='card-title'>CesiumJS App</h2>
+      <p>A card component has a figure, body, bladaw</p>
+      <div class='card-actions flex'>
+        <a href='/cesium' class='btn btn-primary'>Visit</a>
+        <div class='grow'></div>
+        <GithubLink link='#' />
+      </div>
+    </NavCard>
+
+    <div class='divider lg:divider-horizontal lg:before:max-h-1/2! lg:after:max-h-1/2!'></div>
+
+    <NavCard img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" imgAlt="Shoes">
+      <h2 class='card-title'>GEE Web App</h2>
+      <p>A card component has a figure, body, bladaw</p>
+      <div class='card-actions flex'>
+        <a href='/gee' class='btn btn-primary'>Visit</a>
+        <div class='grow'></div>
+        <GithubLink link='#' />
+      </div>
+    </NavCard>
+  </div>
+</BaseLayout>

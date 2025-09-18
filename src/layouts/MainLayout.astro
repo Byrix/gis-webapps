@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import GithubLink from '../components/GithubLink.astro';
+import { Icon } from 'astro-icon/components';
+
+const { title, classList="" } = Astro.props;
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <title>{title}</title>
+  </head>
+  <body class='bg-base-100 max-h-screen h-screen flex flex-col'>
+    <Navbar>
+      <li><a href='/cesium'>Cesium App</a></li>
+      <li><a href='/gee'>GEE App</a></li>
+    </Navbar>
+
+    <main class=`w-screen grow ${classList}`>
+      <slot />
+    </main>
+
+    <footer class='footer sm:footer-horizontal bg-base-200 items-center p-4'>
+      <aside class='grid-flow-col items-center'>
+        <p>Sean Brooker (s3998599) | © 2025</p>
+      </aside>
+      <nav class='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
+        <a href='/cesium' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='Cesium App'>
+          <Icon name="simple-icons:cesium" class='size-4' />
+        </a>
+        <a href='/gee' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='GEE App'>
+          <Icon name="simple-icons:googleearthengine" class='size-4' />
+        </a>
+        <GithubLink 
+          link="#" 
+          name="" iconSize=4
+          btnClasses="btn-xs btn-primary btn-ghost btn-circle tooltip" 
+          tooltip="View source on Github" 
+        />
+      </nav>
+    </footer>
+  </body>
+</html>
+

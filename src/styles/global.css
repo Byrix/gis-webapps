@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+@plugin "daisyui/theme" {
+  name: "latte";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #eff1f5;
+  --color-base-200: #e6e9ef;
+  --color-base-300: #dce0e8;
+  --color-base-content: #4c4f69;
+  --color-primary: #1e66f5;
+  --color-primary-content: oklch(93% 0.034 272.788);
+  --color-secondary: #8839ef;
+  --color-secondary-content: #eff1f5;
+  --color-accent: #179299;
+  --color-accent-content: #eff1f5;
+  --color-neutral: #ccd0da;
+  --color-neutral-content: #5c5f77;
+  --color-info: #04a5e5;
+  --color-info-content: #eff1f5;
+  --color-success: #40a02b;
+  --color-success-content: #eff1f5;
+  --color-warning: #df8e1d;
+  --color-warning-content: #eff1f5;
+  --color-error: #d20f39;
+  --color-error-content: #eff1f5;
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "mocha";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #1e1e2e;
+  --color-base-200: #181825;
+  --color-base-300: #11111b;
+  --color-base-content: #cdd6f4;
+  --color-primary: #89b4fa;
+  --color-primary-content: #1e1e2e;
+  --color-secondary: #cba6f7;
+  --color-secondary-content: #1e1e2e;
+  --color-accent: #f5c2e7;
+  --color-accent-content: #1e1e2e;
+  --color-neutral: #313244;
+  --color-neutral-content: #bac2de;
+  --color-info: #89dceb;
+  --color-info-content: #1e1e2e;
+  --color-success: #a6e3a1;
+  --color-success-content: #1e1e2e;
+  --color-warning: #f9e2af;
+  --color-warning-content: #1e1e2e;
+  --color-error: #f38ba8;
+  --color-error-content: #1e1e2e;
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+:root:has(input.theme-controller[value=mocha]:checked),[data-theme="mytheme"] {
+  color-scheme: mocha;
+}
+
+:root:has(input.theme-controller[value=mocha]),[data-theme="mytheme"] {
+  color-scheme: latte;
+}

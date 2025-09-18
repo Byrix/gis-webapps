@@ -1,0 +1,24 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "cesium/Build/Cesium/Widgets/widgets.css";
+
+import { CesiumMap } from "../components/cesium";
+import CesiumSkeleton from '../components/cesium/CesiumSkeleton.astro';
+
+import { getTrail, getWaypoints, getInitialPoint } from "../db";
+
+const trailData = await getTrail();
+const waypointData = await getWaypoints();
+const initPoint = await getInitialPoint();
+---
+
+<MainLayout title="CesiumJS App">
+    <CesiumMap 
+      client:only='react' 
+      trail={trailData}
+      waypoints={waypointData}
+      initPoint={initPoint}
+    >
+      <CesiumSkeleton slot='fallback' />
+    </CesiumMap>
+</MainLayout>

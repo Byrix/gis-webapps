@@ -1,0 +1,12 @@
+node_modules
+.astro
+.env
+*.pdf
+*api
+data/*
+!data/.gitkeep
+
+*Test*
+*test*
+*sandbox*
+*Sandbox*
