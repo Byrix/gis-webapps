@@ -35,7 +35,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-         fi
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -43,7 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "21"
           cache: pnpm
           cache-dependency-path: ${{ env.BUILD_PATH }}/package.json
       - name: Setup Pages
@@ -55,15 +54,16 @@ jobs:
         run: pnpm astro build \
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
+        working-directory: ${{ env.BUILD_PATH }}
       - name: Create env file 
         run: |
-          touch .env
+          touch ${{ env.BUILD_PATH }}/.env
           echo CESIUM_TOKEN='${{ secrets.CESIUM_TOKEN }}' >> .env
           echo WEATHER_TOKEN='${{ secrets.WEATHER_TOKEN }}' >> .env
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ${{ env.BUILD_PATH }}/dist
 
   deploy:
     environment:
