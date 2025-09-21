@@ -56,15 +56,13 @@ jobs:
         env:
           CESIUM_TOKEN: ${{ secrets.CESIUM_TOKEN }}
           WEATHER_TOKEN: ${{ secrets.WEATHER_TOKEN }}
+        working-directory: ${{ env.BUILD_PATH }}
         run: |
           touch .env
           echo "CESIUM_TOKEN=$CESIUM_TOKEN" >> .env
           echo "WEATHER_TOKEN=$WEATHER_TOKEN" >> .env
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
-        run: pnpm astro build \
-            --site "${{ steps.pages.outputs.origin }}" \
-            --base "${{ steps.pages.outputs.base_path }}"
+        run: pnpm astro build
         working-directory: ${{ env.BUILD_PATH }}
         if: steps.makeenv.outcome == 'success'
       - name: Upload artifact
