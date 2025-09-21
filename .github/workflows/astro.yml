@@ -53,8 +53,8 @@ jobs:
       - name: Create env file 
         run: |
           touch ${{ env.BUILD_PATH }}/.env
-          echo CESIUM_TOKEN='${{ secrets.CESIUM_TOKEN }}' >> .env
-          echo WEATHER_TOKEN='${{ secrets.WEATHER_TOKEN }}' >> .env
+          echo CESIUM_TOKEN='${{ secrets.CESIUM_TOKEN }}' >> ${{ env.BUILD_PATH }}/.env
+          echo WEATHER_TOKEN='${{ secrets.WEATHER_TOKEN }}' >> ${{ env.BUILD_PATH }}/.env
       - name: Build with Astro
         run: pnpm astro build \
             --site "${{ steps.pages.outputs.origin }}" \
