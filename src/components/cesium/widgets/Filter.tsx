@@ -1,22 +1,46 @@
-import { useState } from 'react';
+import { useCesium } from 'resium';
+import type { Viewer } from 'cesium';
 import { Icon } from '@iconify/react';
+import { useState, useEffect, useRef } from 'react';
+
+import Fieldset from './Fieldset';
 
 export function Filter() {
   const [showPoi, setPoi] = useState(true);
   const [showFac, setFac] = useState(true);
   const [showRest, setRest] = useState(true);
   const [showMisc, setMisc] = useState(true);
+  const { viewer } = useCesium();
+  const viewRef = useRef<Viewer>(undefined);
+
+  if (!viewer) return;
+	useEffect(() => {
+		if (viewRef.current != viewer) viewRef.current = viewer;
+	}, [viewer]);
+
+	const toggleVisibility = (feature: string, state: boolean) => {
+		if (!viewRef.current) return;
+		const { dataSources } = viewRef.current.cesiumWidget;
+
+		const matches = dataSources.getByName(feature);
+		if (matches.length==0) return;
+		matches[0].show = state;
+	}
+
+  useEffect(() => toggleVisibility('poi', showPoi), [showPoi]);
+	useEffect(() => toggleVisibility('rest', showRest), [showRest]);
+	useEffect(() => toggleVisibility('facility', showFac), [showFac]);
+	useEffect(() => toggleVisibility('other', showMisc), [showMisc]);
 
   return (
-    <fieldset className='fieldset bg-base-100 border-neutral rounded-box border w-full max-w-full p-4'>
-      <legend className='fieldset-legend'>Data Filters</legend>
+		<Fieldset title='Data Filters' help="Click any of the layers to toggle their visibility off, press it again to turn it back on!">
       <form className='flex flex-col w-full join join-vertical'>
         <Item name='Points of Interest' show={showPoi} onUpdate={() => setPoi(!showPoi)} />
         <Item name='Facilities' show={showFac} onUpdate={() => setFac(!showFac)} />
         <Item name='Rest Spots' show={showRest} onUpdate={() => setRest(!showRest)} />
         <Item name='Other' show={showMisc} onUpdate={() => setMisc(!showMisc)} />
       </form>
-    </fieldset>
+		</Fieldset>
   )
 }
 

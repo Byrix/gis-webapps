@@ -19,7 +19,7 @@ export default function DataAttribution() {
   return (
     <div tabIndex={0} className='mt-2 collapse collapse-arrow bg-base-100 border-neutral border'>
       <div className='collapse-title font-semibold'>Data Attribution</div>
-      <div ref={listRef} className='collapse-content text-sm'>
+      <div ref={listRef} className='collapse-content text-sm overflow-scroll'>
       </div>
     </div>
   );

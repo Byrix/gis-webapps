@@ -6,8 +6,7 @@ import {
   Geocoder, GeocoderSkeleton,
   DataAttribution, AttributionSkeleton,
   DataFilter, FilterSkeleton,
-  Timeline, TimelineSkeleton,
-  CustomGeocoder
+  Weather, WeatherSkeleton
 } from './widgets';
 
 export function Sidebar() {
@@ -17,17 +16,17 @@ export function Sidebar() {
   if (viewer != viewerRef.current) viewerRef.current = viewer;
 
   return (
-    <div className='absolute left-[1vw] top-[7vh] w-1/5 h-fit bg-base-200 border-neutral border-2 rounded-box z-1 p-3 flex flex-col justify-center items-center gap-3 overflow-scroll'>
+    <div className='absolute left-[1vw] top-[8vh] w-1/5 min-w-70 h-fit max-h-[85vh] bg-base-200 border-neutral border-2 rounded-box z-1 p-3 flex flex-col justify-start items-center gap-3 overflow-scroll'>
       <h3 className='text-primary text-2xl font-bold text-center'>Lilydale to Warburton Rail Trail</h3>
-      <p>Description here</p>
+      <p className='text-center'>Explore some of the iconic stops along the Lilydale-Warburton Rail Trail.</p>
 
       <div className='divider m-[0.5rem]'>
         <Icon icon='material-symbols:directions-bike-rounded' className='size-10 opacity-20' />
       </div>
 
-      <CustomGeocoder />
+      {/* <CustomGeocoder /> */}
       <DataFilter />
-      <Timeline />
+      <Weather />
       <DataAttribution />
     </div>
   );
@@ -45,7 +44,7 @@ export function SidebarSkeleton() {
 
       <GeocoderSkeleton />
       <FilterSkeleton />
-      <TimelineSkeleton />
+      <WeatherSkeleton />
       <AttributionSkeleton />
     </div>
   );

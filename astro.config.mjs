@@ -38,9 +38,10 @@ export default defineConfig({
   env:{
     schema: {
       CESIUM_TOKEN: envField.string({ context: "client", access: "public" }),
-      PGHOST: envField.string({ context: "server", access: "secret" }),
-      PGUSER: envField.string({ context: "server", access: "secret" }),
-      PGPASSWORD: envField.string({ context: "server", access: "secret" }),
+      // PG_HOST: envField.string({ context: "server", access: "secret" }),
+      // PG_USER: envField.string({ context: "server", access: "secret" }),
+      // PG_PASSWORD: envField.string({ context: "server", access: "secret" }),
+      WEATHER_TOKEN: envField.string({ context: "client", access: 'public' }),
     }
   },
 

@@ -3,10 +3,10 @@ node_modules
 .env
 *.pdf
 *api
-data/*
-!data/.gitkeep
 
 *Test*
 *test*
 *sandbox*
 *Sandbox*
+
+pnpm-lock.yaml

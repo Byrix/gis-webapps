@@ -14,13 +14,7 @@ const Suggestion = z.object({
 })
 type Suggestion = z.infer<typeof Suggestion>;
 
-const Toast = z.object({
-  type: z.string(),  // TODO: Change to a literal of some kind
-  title: z.string(),
-  description: z.string(),
-  icon: z.string()
-})
-type Toast = z.infer<typeof Toast>
+
 
 export default function Geocoder() {
   const { viewer } = useCesium();
@@ -71,6 +65,7 @@ export default function Geocoder() {
   useEffect(() => {
     if (toasts.length===0) return;
     const toggleToasts = setTimeout(() => {
+			console.debug("Trying to shift")
       var newToasts = toasts;
       newToasts.shift();
       setToasts(newToasts);
@@ -80,7 +75,7 @@ export default function Geocoder() {
 
   return (
     <>
-      <label className='input'>
+      <label className='input w-full'>
         <span className='label'>
           <Icon icon='material-symbols:search' className={`size-6 ${isSubmitting ? 'hidden' : ''}`}/>
           <span className={`loading loading-spinner loading-md ${isSubmitting ? '' : 'hidden'}`} />

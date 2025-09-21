@@ -1,13 +1,13 @@
 
 import { Pool } from 'pg';
-import { PGHOST, PGUSER, PGPASSWORD } from 'astro:env/server';
+import { PG_HOST, PG_USER, PG_PASSWORD } from 'astro:env/server';
 import { InitPoint } from './schema';
 import { GeoJSONFeatureCollectionSchema } from 'zod-geojson';
 
 const pool = new Pool({
-  host: PGHOST,
-  user: PGUSER,
-  password: PGPASSWORD,
+  host: PG_HOST || "192.168.1.52",
+  user: PG_USER,
+  password: PG_PASSWORD,
   database: "advanced_gis"
 });
 

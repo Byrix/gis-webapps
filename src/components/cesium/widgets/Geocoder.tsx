@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Icon } from '@iconify/react';
 import { useCesium } from 'resium'; 
-import { Geocoder, type Viewer } from 'cesium'; 
+import { Geocoder, GoogleGeocoderService, type Viewer } from 'cesium'; 
 
 const moveSearch = (geocoder: Geocoder) => {
   const cSearch = geocoder.container.firstChild;
@@ -34,10 +34,8 @@ export function CustomGeocoder() {
 
   useEffect(() => {
     if (!viewer || !geocoderRef.current ) return;
-    const gc = new Geocoder({
-      container: geocoderRef.current,
-      scene: viewer.scene,
-    });
+    const gc = viewer.geocoder;
+		gc.container = geocoderRef.current;
 
     moveSearch(gc);
     moveSuggestions(gc);

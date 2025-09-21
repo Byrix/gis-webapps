@@ -4,12 +4,11 @@ import type { Viewer } from 'cesium';
 export const etGoHome = (viewer: Viewer) => {
   if (!viewer) return;
   viewer.camera.flyTo({
-    // destination: Cartesian3.fromDegrees(-122.4175, 37.655, 400),
-    destination: Cartesian3.fromDegrees(-73.935242, 40.730610, 400),
+    destination: Cartesian3.fromDegrees(145.350281, -37.757549, 3000),
     orientation: {
-      heading: CesiumMath.toRadians(0.0),
-      pitch: CesiumMath.toRadians(-15.0),
-    },
+			heading: CesiumMath.toRadians(0.0),
+			pitch: CesiumMath.toRadians(-75.0),
+		},
   });
 }
 

@@ -1,0 +1,905 @@
+{
+  "type": "FeatureCollection",
+	"name": "Lilydale_to_Warburton_Rail_Trail_waypoints",
+	"crs": { 
+		"type": "name", 
+		"properties": { 
+			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+		}
+	},
+  "features": [
+    {
+      "id": 1,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.349859037,
+          -37.753910003,
+          102.9
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 2,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.528061986,
+          -37.775345966,
+          94.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 3,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.586532969,
+          -37.776218019,
+          123.1
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 4,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.609296123,
+          -37.780819936,
+          120
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 5,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.613208124,
+          -37.781072315,
+          121.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 6,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.680340882,
+          -37.755622175,
+          156.8
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 7,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.688887658,
+          -37.75457737,
+          171.2
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 8,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.365280984,
+          -37.763434025,
+          168.2
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 9,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.365389027,
+          -37.763569979,
+          168.2
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 10,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.387061946,
+          -37.788492898,
+          217.8
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 11,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.426002927,
+          -37.777610756,
+          172.3
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 12,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.457587028,
+          -37.769186022,
+          132.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 13,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.459251003,
+          -37.767507965,
+          132.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 14,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.4608123,
+          -37.765787579,
+          136.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 15,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.494477963,
+          -37.758159963,
+          108.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Car park",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 16,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.378756402,
+          -37.784115197,
+          233.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Picnic table",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "restaurant"
+      }
+    },
+    {
+      "id": 17,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.379168121,
+          -37.785292938,
+          231.9
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Picnic table",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "restaurant"
+      }
+    },
+    {
+      "id": 18,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.430208547,
+          -37.777197696,
+          175.7
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Picnic table",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "restaurant"
+      }
+    },
+    {
+      "id": 19,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.494477963,
+          -37.758159963,
+          108.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Picnic table",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "restaurant"
+      }
+    },
+    {
+      "id": 20,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.613378445,
+          -37.781074913,
+          121.9
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Picnic table",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "restaurant"
+      }
+    },
+    {
+      "id": 21,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.359581038,
+          -37.756708972,
+          134.7
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Bridge",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 22,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.409775814,
+          -37.781863566,
+          160.8
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Bridge",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 23,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.680266703,
+          -37.755654445,
+          156.6
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Bridge",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 24,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.387242073,
+          -37.788536903,
+          218
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Cafe Penny Olive Sourdough",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "cafe"
+      }
+    },
+    {
+      "id": 25,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.457561715,
+          -37.769159116,
+          132.4
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Carriage Cafe",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "parking"
+      }
+    },
+    {
+      "id": 26,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.688916743,
+          -37.754638894,
+          173
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Cog Cafe",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "cafe"
+      }
+    },
+    {
+      "id": 27,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.42615531,
+          -37.777537247,
+          172.7
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Historical Information",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 28,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.584358955,
+          -37.775863046,
+          121.8
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Home Hotel",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "lodging"
+      }
+    },
+    {
+      "id": 29,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.68890526,
+          -37.754602851,
+          172
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Information",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 30,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.511629013,
+          -37.764771022,
+          90.3
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Long Wooden Bridge",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 31,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.492971987,
+          -37.758068014,
+          106.2
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Killara Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 32,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.587855969,
+          -37.776162028,
+          122.7
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Launching Place Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 33,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.37877216,
+          -37.78453094,
+          233.4
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Mt Evelyn Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 34,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.460642315,
+          -37.76600224,
+          135.5
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Seville Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 35,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.429412685,
+          -37.777023269,
+          176.5
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Wandin Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 36,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.639892919,
+          -37.764526103,
+          129.9
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Wesburn Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 37,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.528062992,
+          -37.77533398,
+          94.5
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Old Woori Yallock Station",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": "rail"
+      }
+    },
+    {
+      "id": 38,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.378756821,
+          -37.784084938,
+          233.3
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Playground",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "playground"
+      }
+    },
+    {
+      "id": 39,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.528072296,
+          -37.775338758,
+          94.5
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Playground",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "playground"
+      }
+    },
+    {
+      "id": 40,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.611826368,
+          -37.781318156,
+          120.3
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Playground",
+        "stroke": "#4c4f69",
+        "marker-color": "#40a02b",
+        "marker-symbol": "playground"
+      }
+    },
+    {
+      "id": 41,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.374385575,
+          -37.76933589,
+          199
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Tunnel",
+        "stroke": "#4c4f69",
+        "marker-color": "#df8e1d",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 42,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.609304924,
+          -37.780823288,
+          120
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Upper Yarra Museum",
+        "stroke": "#4c4f69",
+        "marker-color": "#8839ef",
+        "marker-symbol": null
+      }
+    },
+    {
+      "id": 43,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.378782805,
+          -37.784151323,
+          234
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Toilet (wheelchair accessible)",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "toilets"
+      }
+    },
+    {
+      "id": 44,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.611819411,
+          -37.781319749,
+          120.3
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Toilet (wheelchair accessible)",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "toilets"
+      }
+    },
+    {
+      "id": 45,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.606592037,
+          -37.780137984,
+          127.7
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Toilet",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "toilets"
+      }
+    },
+    {
+      "id": 46,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.653772512,
+          -37.755015576,
+          142.8
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Toilet",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "toilets"
+      }
+    },
+    {
+      "id": 47,
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.379168121,
+          -37.785292938,
+          231.9
+        ]
+      },
+      "properties": {
+        "fill": "#eff1f5",
+        "name": "Water (drinking tap)",
+        "stroke": "#4c4f69",
+        "marker-color": "#1e66f5",
+        "marker-symbol": "water"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
 import { DayPicker } from 'react-day-picker';
+import Fieldset from './Fieldset';
 
 export function Timeline() {
   const [date, setDate] = useState<Date>(new Date(Date.now()))
@@ -14,8 +15,9 @@ export function Timeline() {
 
   return (
     <>
-      <fieldset className='fieldset bg-base-100 border-neutral rounded-box border w-full max-w-full p-4'>
-        <legend className='fieldset-legend'>Get Rainfall</legend>
+			<Fieldset title='Get Rainfall'>
+      {/* <fieldset className='fieldset bg-base-100 border-neutral rounded-box border w-full max-w-full p-4'>
+        <legend className='fieldset-legend'>Get Rainfall</legend> */}
 
         <label className='input input-neutral w-full'>
           <span className='label'>
@@ -33,7 +35,8 @@ export function Timeline() {
             <input type='button' value="Run" />
           </label>
         </div>
-      </fieldset>
+      {/* </fieldset> */}
+			</Fieldset>
 
       <div popover="auto" id="rdp-popover" className="dropdown" style={{ positionAnchor: "--rdp" } as React.CSSProperties}>
         <DayPicker className="react-day-picker" mode="single" selected={date} onSelect={setDate} />
