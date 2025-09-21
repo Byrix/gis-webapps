@@ -1,32 +1,49 @@
 ---
 export const prerender = true;
 
+import photoCesium from '../assets/cesium.png';
+import photoGEE from '../assets/gee.png';
+
 import BaseLayout from '../layouts/MainLayout.astro';
 import NavCard from '../components/NavCard.astro';
 import GithubLink from '../components/GithubLink.astro';
+import ExternalLink from '../components/ExternalLink.astro';
 ---
 
 <BaseLayout title='Home' classList="flex justify-center lg:items-center overflow-scroll">
   <div class="h-2/5 flex flex-col lg:flex-row">
-    <NavCard img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" imgAlt="Shoes">
+    <NavCard img={photoCesium} imgAlt="Preview of the CesiumJS app">
       <h2 class='card-title'>CesiumJS App</h2>
       <p>A 3D world map visualising the Lilydale-Warburton Rail Trail visualising some key waystops along the way and the local weather at each.</p>
       <div class='card-actions flex'>
-        <a href='/cesium' class='btn btn-primary'>Visit</a>
+        <a href='/cesium/' class='btn btn-primary'>Visit</a>
         <div class='grow'></div>
-        <GithubLink link='#' />
+        <!-- <GithubLink link='https://github.com/Byrix/gis-webapps/tree/main/src/components/cesium' /> -->
+        <ExternalLink
+          name='Github'
+          id='card_github'
+          icon='simple-icons:github'
+          link='https://github.com/Byrix/gis-webapps/tree/main/src/components/cesium'
+        />
       </div>
     </NavCard>
 
     <div class='divider lg:divider-horizontal lg:before:max-h-1/2! lg:after:max-h-1/2!'></div>
 
-    <NavCard img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" imgAlt="Shoes">
+    <NavCard img={photoGEE} imgAlt="Preview of the Google Earth Engine app">
       <h2 class='card-title'>GEE Web App</h2>
-      <p>A card component has a figure, body, bladaw</p>
+      <p>Interactive web map to visualise and compare changes in yearly median surface temperatures across Melbourne, Victoria.</p>
       <div class='card-actions flex'>
-        <a href='/gee' class='btn btn-primary'>Visit</a>
-        <div class='grow'></div>
-        <GithubLink link='#' />
+        <!-- <a href='/gee/' class='btn btn-primary'>Visit </a> -->
+        <ExternalLink 
+          name='Visit'
+          link='https://code.earthengine.google.com/c5bf9539739bc5de84dd3d520ba33942' 
+          id='card_gee'
+          icon=''
+          btnClasses='btn-primary'
+        />
+        <!-- <div class='grow'></div> -->
+        <!-- <GithubLink link='#' /> -->
       </div>
     </NavCard>
   </div>

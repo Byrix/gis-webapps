@@ -1,9 +1,8 @@
 import { CESIUM_TOKEN } from 'astro:env/client';
-import { Viewer as ResiumViewer, CameraFlyTo, GeoJsonDataSource, Cesium3DTileset as Resium3DTileset } from 'resium';
-import { Ion, Cartesian3, Math as CesiumMath, Color, createWorldTerrainAsync, type Viewer, type Cesium3DTileset, IonResource, IonGeocodeProviderType } from 'cesium';
+import { Viewer as ResiumViewer, CameraFlyTo, GeoJsonDataSource } from 'resium';
+import { Ion, Cartesian3, Math as CesiumMath, Color, createWorldTerrainAsync, type Viewer, IonGeocodeProviderType } from 'cesium';
 import { Sidebar } from './Sidebar';
-import { MapControls, NavModal, GoogleMapsOverlay } from './widgets';
-
+import { MapControls, GoogleMapsOverlay } from './widgets';
 import { Suspense } from 'react';
 import type { Waypoints, Trail } from '../../schema';
 

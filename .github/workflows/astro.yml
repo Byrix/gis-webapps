@@ -58,7 +58,8 @@ jobs:
       - name: Create env file 
         run: |
           touch .env
-          echo CESIUM_TOKEN=${{ secrets.CESIUM_TOKEN }} >> .env
+          echo CESIUM_TOKEN='${{ secrets.CESIUM_TOKEN }}' >> .env
+          echo WEATHER_TOKEN='${{ secrets.WEATHER_TOKEN }}' >> .env
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

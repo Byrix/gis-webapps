@@ -10,3 +10,6 @@ node_modules
 *Sandbox*
 
 pnpm-lock.yaml
+build
+dist
+home

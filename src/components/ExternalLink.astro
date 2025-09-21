@@ -2,33 +2,42 @@
 import { Icon } from 'astro-icon/components';
 const {
   link,
-  icon,
-  name="Github",
+  id,
+  icon='',
+  name='',
   btnClasses='btn-primary btn-soft',
   tooltip='',
   iconSize=6
 } = Astro.props;
 ---
 
-<button onclick='modalLeaving.showModal()' class={`btn ${btnClasses}`} data-tip={tooltip}>
-  <Icon name="simple-icons:github" class={`size-${iconSize}`} />
+
+<button onclick={`modal_ext_${id}.showModal()`} class={`btn ${btnClasses}`} data-tip={tooltip}>
+  {icon!='' && <Icon name={icon} class={`size-${iconSize}`} />}
   {name!="" && <>
     {name}
     <Icon name='material-symbols:open-in-new' />
   </>}
 </button>
 
-<dialog id="modalLeaving" class='modal'>
+<dialog id={`modal_ext_${id}`} class='modal'>
   <div class='modal-box'>
     <form method='dialog'>
       <button class='btn btn-sm btn-circle btn-ghost absolute right-2 top-2'>x</button>
     </form>
     <h3 class='text-lg font-bold'>Warning - you are leaving the site</h3>
     <p class='pt-4'>You are being redirected to:</p>
-    <div class='w-full mt-2 bg-base-200 rounded-box'>
+    <!-- <div class='w-full mt-2 bg-base-200 rounded-box'> -->
       <!-- <Icon name='material-symbols:globe' class='join-item size-6' /> -->
-      <span class='font-mono p-2 text-lg'>{link}</span>
-    </div>
+    <!--   <span class='font-mono p-2 text-lg'>{link}</span> -->
+    <!-- </div> -->
+    <label class='input w-full mt-2'>
+      <span class='label'>
+        <Icon name='material-symbols:globe' class='size-6' />
+      </span>
+      <!-- <input type='text' value={link} /> -->
+      <div class='inline-flex h-full w-full appearance-none bg-transparent border-none items-center overflow-x-scroll'>{link}</div>
+    </label>
     <div class='modal-action'>
       <form method='dialog'>
         <button class='btn btn-primary'>Go back</button>
@@ -43,3 +52,4 @@ const {
     <button>close</button>
   </form>
 </dialog>
+

@@ -8,7 +8,7 @@ First app is built on the [CesiumJS](https://cesium.com/platform/cesiumjs/) plat
 The second app is built using [Google Earth Engine](https://earthengine.google.com/) (GEE) 
 
 ## Build
-Full packages requirements can be found in `./package.json` and installed with your Node package manager of choice. Main packages required are Astro, React, TypeScript, TailwindCSS, DaisyUI, Cesium, and Resium. 
+Requires NodeJS 21.0.0+. Full packages requirements can be found in `./package.json` and installed with your Node package manager of choice. Main packages required are Astro, React, TypeScript, TailwindCSS, DaisyUI, Cesium, and Resium. 
 
 Also requires various environment variables to be set. `./astro.config.mjs` contains a schema for which variables are required. 
 

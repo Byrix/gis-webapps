@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import GithubLink from '../components/GithubLink.astro';
+import ExternalLink from '../components/ExternalLink.astro';
 import { Icon } from 'astro-icon/components';
 
 const { title, classList="" } = Astro.props;
@@ -16,8 +17,10 @@ const { title, classList="" } = Astro.props;
   </head>
   <body class='bg-base-100 max-h-screen h-screen flex flex-col'>
     <Navbar>
-      <li><a href='/cesium'>Cesium App</a></li>
-      <li><a href='/gee'>GEE App</a></li>
+      <li> <a class='btn' href='/cesium/'>Cesium App</a> </li>
+      <li><button onclick='modal_ext_footer_gee.showModal()' class='btn'>
+        GEE App <Icon name='material-symbols:open-in-new' />
+      </button></li>
     </Navbar>
 
     <main class=`w-screen grow ${classList}`>
@@ -29,17 +32,34 @@ const { title, classList="" } = Astro.props;
         <p>Sean Brooker (s3998599) | © 2025</p>
       </aside>
       <nav class='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
-        <a href='/cesium' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='Cesium App'>
+        <a href='/cesium/' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='Cesium App'>
           <Icon name="simple-icons:cesium" class='size-4' />
         </a>
-        <a href='/gee' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='GEE App'>
-          <Icon name="simple-icons:googleearthengine" class='size-4' />
-        </a>
-        <GithubLink 
-          link="#" 
-          name="" iconSize=4
-          btnClasses="btn-xs btn-primary btn-ghost btn-circle tooltip" 
-          tooltip="View source on Github" 
+        <!-- <a href='/gee' class='btn btn-xs btn-primary btn-ghost btn-circle tooltip' data-tip='GEE App'> -->
+        <!--   <Icon name="simple-icons:googleearthengine" class='size-4' /> -->
+        <!-- </a> -->
+        <ExternalLink
+          link='https://code.earthengine.google.com/c5bf9539739bc5de84dd3d520ba33942' 
+          icon='simple-icons:googleearthengine'
+          id='footer_gee'
+          name='' iconSize=4
+          btnClasses='btn-xs btn-primary btn-ghost btn-circle tooltip'
+          tooltip='GEE App'
+        />
+
+        <!-- <GithubLink  -->
+        <!--   link="#"  -->
+        <!--   name="" iconSize=4 -->
+        <!--   btnClasses="btn-xs btn-primary btn-ghost btn-circle tooltip"  -->
+        <!--   tooltip="View source on Github"  -->
+        <!-- /> -->
+        <ExternalLink
+          link='https://github.com/Byrix/gis-webapps'
+          icon='simple-icons:github'
+          id='footer_github'
+          name='' iconSize=4
+          btnClasses='btn-xs btn-primary btn-ghost btn-circle tooltip'
+          tooltip='Github'
         />
       </nav>
     </footer>
