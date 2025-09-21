@@ -50,16 +50,16 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: pnpm i
-      - name: Build with Astro
-        run: pnpm astro build \
-            --site "${{ steps.pages.outputs.origin }}" \
-            --base "${{ steps.pages.outputs.base_path }}"
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Create env file 
         run: |
           touch ${{ env.BUILD_PATH }}/.env
           echo CESIUM_TOKEN='${{ secrets.CESIUM_TOKEN }}' >> .env
           echo WEATHER_TOKEN='${{ secrets.WEATHER_TOKEN }}' >> .env
+      - name: Build with Astro
+        run: pnpm astro build \
+            --site "${{ steps.pages.outputs.origin }}" \
+            --base "${{ steps.pages.outputs.base_path }}"
+        working-directory: ${{ env.BUILD_PATH }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
