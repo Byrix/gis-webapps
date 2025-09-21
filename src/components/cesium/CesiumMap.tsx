@@ -5,26 +5,26 @@ import { Sidebar } from './Sidebar';
 import { MapControls, GoogleMapsOverlay } from './widgets';
 import { Suspense } from 'react';
 import type { Waypoints, Trail } from '../../schema';
-
-Ion.defaultAccessToken = CESIUM_TOKEN;
-
-const viewerArgs: Viewer.ConstructorOptions = {
-  geocoder: IonGeocodeProviderType.GOOGLE,
-  fullscreenButton: false,
-  sceneModePicker: false,
-  homeButton: false,
-  navigationHelpButton: false,
-  creditContainer: 'void',
-  creditViewport: 'void',
-  timeline: false,
-  animation: false,
-	baseLayerPicker: false
-};
+import "cesium/Build/Cesium/Widgets/widgets.css";
 
 export function CesiumMap({ trail, waypoints }: {
   trail: Trail,
   waypoints: Waypoints[]
 }) {
+  Ion.defaultAccessToken = CESIUM_TOKEN;
+  const viewerArgs: Viewer.ConstructorOptions = {
+    geocoder: IonGeocodeProviderType.GOOGLE,
+    fullscreenButton: false,
+    sceneModePicker: false,
+    homeButton: false,
+    navigationHelpButton: false,
+    creditContainer: 'void',
+    creditViewport: 'void',
+    timeline: false,
+    animation: false,
+    baseLayerPicker: false
+  };
+
 	return (<>
 		<Suspense>
 		<ResiumViewer

@@ -5,8 +5,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
 import react from '@astrojs/react';
-import cesium from 'vite-plugin-cesium';
-import node from "@astrojs/node";
+// import cesium from 'vite-plugin-cesium';
 import sitemap from "@astrojs/sitemap";
 
 const cesiumSource = 'node_modules/cesium/Build/Cesium';
@@ -14,16 +13,18 @@ const cesiumBaseUrl = 'cesiumStatic';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://byrix.github.io/webapps/sitemap-index.xml",
+  site: "https://byrix.github.io",
+  base: '/gis-webapps',
+  output: 'static',
   integrations: [icon(), react(), sitemap()],
 
   vite: {
     define: {
-      CESIUM_BASE_URL: JSON.stringify(`/${cesiumBaseUrl}`),
+      CESIUM_BASE_URL: JSON.stringify(`/gis-webapps/${cesiumBaseUrl}`),
     },
     plugins: [
       tailwindcss(), 
-      cesium(),
+      // cesium(),
       viteStaticCopy({
         targets: [
           { src: `${cesiumSource}/ThirdParty`, dest: cesiumBaseUrl },
@@ -44,8 +45,4 @@ export default defineConfig({
       WEATHER_TOKEN: envField.string({ context: "client", access: 'public' }),
     }
   },
-
-  adapter: node({
-    mode: "standalone"
-  })
 });
